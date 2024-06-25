@@ -17,11 +17,11 @@ const { Client } = require("pg");
 
 async function postgressqlConnection() {
     const client = new Client({
-        host: "localhost",
+        host: "192.168.2.86",
         user: "postgres",
         port: 5432,
-        password: "1725",
-        database: "Vensai"
+        password: "postgres",
+        database: "postgres"
     });
     await client.connect();
     return client;
